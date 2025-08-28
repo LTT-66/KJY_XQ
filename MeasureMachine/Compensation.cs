@@ -34,6 +34,7 @@ namespace MeasureMachine
         public double Compensate_Material_Method(double ring_size, double material_coef, double material_t)
         {
             // double material_coef = 11.5;
+
             double m_Ringsize = ring_size * (1 + material_coef * (20.0 - material_t) * 1E-6);
             return m_Ringsize;
         }
